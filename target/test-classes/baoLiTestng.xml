@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite">
+    <groups>
+        <run>
+            <!--基础数据-->
+            <include name="user"/> <!--用户管理-->
+            <include name="role"/> <!--角色管理-->
+            <include name="dictionaries"/> <!--用户字典-->
+            <include name="department"/> <!--部门管理-->
+            <include name="vehicle"/> <!--车船箱信息-->
+            <include name="driver"/> <!--司机信息-->
+            <include name="client"/> <!--客户信息-->
+            <include name="supplier"/> <!--供应商信息-->
+            <include name="address"/> <!--地址信息-->
+            <include name="circuit"/> <!--线路信息-->
+            <include name="material"/> <!--物料信息-->
+            <include name="contract"/> <!--合同信息-->
+            <include name="linePrice"/> <!--线路价格信息-->
+            <include name="carrier"/> <!--承运商信息-->
+            <include name="location"/> <!--车辆定位-->
+            <include name="geographicalMap"/> <!--物流地图-->
+            <include name="track"/> <!--轨迹回放-->
+            <include name="monitoring"/> <!--视频监控-->
+            <include name="playback"/> <!--视频回放-->
+            <include name="download"/> <!--视频下载-->
+            <include name="systemsettings"/> <!--系统设置-->
+            <!--业务报表-->
+            <include name="order"/> <!--运单管理-->
+            <include name="workOrder"/> <!--任务单管理-->
+            <include name="waybill"/> <!--运单管理-->
+            <include name="monitoring"/> <!--运单监控-->
+            <include name="enquiry"/> <!--询价管理-->
+            <include name="report"/> <!--报表管理-->
+            <include name="finance"/> <!--财务中心-->
+            <!--小程序-->
+            <include name="appletdriver"/>  <!--司机签收-->
+            <!--<include name="appletclient"/>--> <!--客户签收-->
+            <include name="storekeeper"/> <!---库管-->
+            <!--基础依赖数据创建-->
+            <include name="basedata"/>
+        </run>
+    </groups>
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="listeners.RetryListener"/>
+    </listeners>
+
+    <!--基础数据-->
+    <test name="BaoliOne" enabled="false">
+        <classes>
+            <class name="testcase.baoLiIterationOne">
+            </class>
+        </classes>
+    </test>
+
+    <!--业务报表-->
+    <test name="BaoliTwo" enabled="true">
+        <classes>
+            <class name="testcase.baoLiIterationTwo">
+            </class>
+        </classes>
+    </test>
+
+    <!--小程序-->
+    <test name="applet" enabled="false">
+        <classes>
+            <class name="testcase.baoLiApplet">
+            </class>
+        </classes>
+    </test>
+
+    <!--宝利基础依赖数据创建-->
+    <test name="applet" enabled="false">
+        <classes>
+            <class name="testcase.baoLiIBaseData">
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
+

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BaoliTwo"
+           tests="62"
+           failures="6"
+           errors="0"
+           skipped="0"
+           time="9.659">
+  <properties />
+            <testcase name="test_058_splitOrder" time="0.209" classname="testcase.baoLiIterationTwo">
+                <failure type="java.lang.AssertionError"
+                  message="2 expectations failed.
+JSON path code doesn&apos;t match.
+Expected: &lt;1&gt;
+  Actual: 0
+
+JSON path message doesn&apos;t match.
+Expected: 订单拆分成功
+  Actual: 拆单时出现异常
+"
+              >
+<![CDATA[java.lang.AssertionError: 2 expectations failed.
+JSON path code doesn't match.
+Expected: <1>
+  Actual: 0
+
+JSON path message doesn't match.
+Expected: 订单拆分成功
+  Actual: 拆单时出现异常
+
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+  org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+  org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+  io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+  io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+  io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1750)
+  sun.reflect.GeneratedMethodAccessor103.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+  groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+  io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+  io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1755)
+  sun.reflect.GeneratedMethodAccessor102.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+  groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+  io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+  io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
+  io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+  testcase.BaseTestCase.sendRequest(BaseTestCase.java:101)
+  testcase.BaseTestCase.startPerformTest(BaseTestCase.java:163)
+  testcase.baoLiIterationTwo.test_058_splitOrder(baoLiIterationTwo.java:1078)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test_021_saveOrderSubTaskInfo" time="0.121" classname="testcase.baoLiIterationTwo">
+                <failure type="java.lang.AssertionError"
+                  message="2 expectations failed.
+JSON path code doesn&apos;t match.
+Expected: &lt;1&gt;
+  Actual: 9
+
+JSON path message doesn&apos;t match.
+Expected: 信息保存成功
+  Actual: 该承运商在该线路无有效价格，请发起询价
+"
+              >
+<![CDATA[java.lang.AssertionError: 2 expectations failed.
+JSON path code doesn't match.
+Expected: <1>
+  Actual: 9
+
+JSON path message doesn't match.
+Expected: 信息保存成功
+  Actual: 该承运商在该线路无有效价格，请发起询价
+
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+  org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+  org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+  io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+  io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+  io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1750)
+  sun.reflect.GeneratedMethodAccessor103.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+  groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+  io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+  io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1755)
+  sun.reflect.GeneratedMethodAccessor102.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+  groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+  io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+  io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
+  io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+  testcase.BaseTestCase.sendRequest(BaseTestCase.java:101)
+  testcase.BaseTestCase.startPerformTest(BaseTestCase.java:163)
+  testcase.baoLiIterationTwo.test_021_saveOrderSubTaskInfo(baoLiIterationTwo.java:587)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test_006_03_operateOrder" time="0.000" classname="testcase.baoLiIterationTwo">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  testcase.baoLiIterationTwo.test_006_03_operateOrder(baoLiIterationTwo.java:262)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test_059_findByPage" time="0.207" classname="testcase.baoLiIterationTwo">
+                <failure type="java.lang.AssertionError"
+                  message="2 expectations failed.
+JSON path code doesn&apos;t match.
+Expected: &lt;1&gt;
+  Actual: 0
+
+JSON path message doesn&apos;t match.
+Expected: OK
+  Actual: 查询费用管理信息出现异常
+"
+              >
+<![CDATA[java.lang.AssertionError: 2 expectations failed.
+JSON path code doesn't match.
+Expected: <1>
+  Actual: 0
+
+JSON path message doesn't match.
+Expected: OK
+  Actual: 查询费用管理信息出现异常
+
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+  org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+  org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+  io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+  io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+  io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1750)
+  sun.reflect.GeneratedMethodAccessor103.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+  groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+  io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+  io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1755)
+  sun.reflect.GeneratedMethodAccessor102.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+  groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+  io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+  io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
+  io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+  testcase.BaseTestCase.sendRequest(BaseTestCase.java:101)
+  testcase.BaseTestCase.startPerformTest(BaseTestCase.java:163)
+  testcase.baoLiIterationTwo.test_059_findByPage(baoLiIterationTwo.java:1090)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test_006_05_operateOrder" time="0.000" classname="testcase.baoLiIterationTwo">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  testcase.baoLiIterationTwo.test_006_05_operateOrder(baoLiIterationTwo.java:280)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test_018_saveOrderSubTaskInfo" time="0.133" classname="testcase.baoLiIterationTwo">
+                <failure type="java.lang.AssertionError"
+                  message="2 expectations failed.
+JSON path code doesn&apos;t match.
+Expected: &lt;1&gt;
+  Actual: 9
+
+JSON path message doesn&apos;t match.
+Expected: 信息保存成功
+  Actual: 该承运商在该线路无有效价格，请发起询价
+"
+              >
+<![CDATA[java.lang.AssertionError: 2 expectations failed.
+JSON path code doesn't match.
+Expected: <1>
+  Actual: 9
+
+JSON path message doesn't match.
+Expected: 信息保存成功
+  Actual: 该承运商在该线路无有效价格，请发起询价
+
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+  org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+  org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+  org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:238)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:250)
+  io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:494)
+  io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+  io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1750)
+  sun.reflect.GeneratedMethodAccessor103.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+  groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+  io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+  io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1755)
+  sun.reflect.GeneratedMethodAccessor102.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:98)
+  groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1225)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1034)
+  groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:822)
+  io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:47)
+  org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+  org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+  io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:175)
+  io.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+  testcase.BaseTestCase.sendRequest(BaseTestCase.java:101)
+  testcase.BaseTestCase.startPerformTest(BaseTestCase.java:163)
+  testcase.baoLiIterationTwo.test_018_saveOrderSubTaskInfo(baoLiIterationTwo.java:547)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+  org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="test_014_findByPage" time="0.136" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_011_02_findByPage" time="0.154" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_009_saveOrderTaskInfo" time="0.167" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_017_getOrderSubTaskInfoById" time="0.101" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_005_dictionaryTypeList" time="0.102" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_048_findByPage" time="0.106" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_056_findByPage" time="0.360" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_044_findOrderCost" time="0.114" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_006_01_dictionaryTypeList" time="0.102" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_034_quiryLinePrice" time="0.104" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_051_findByPage" time="0.198" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_037_findByPage" time="0.158" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_049_findPage" time="0.195" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_060_findByPage" time="0.113" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_016_confirmTaskInfo" time="0.135" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_041_findInTimelyRateByPage" time="0.119" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_013_confirmTaskInfo" time="0.159" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_010_goSeparateTask" time="0.101" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_036_findByPage" time="0.177" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_002_findByPage" time="0.742" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_012_confirmTaskInfo" time="0.154" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_019_confirmTaskInfo" time="0.136" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_039_findProfitAndLossByPage" time="0.108" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_003_getOrderInfoById" time="0.452" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_055_finishWaybill" time="0.140" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_040_findByPage" time="0.171" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_061_findByPage" time="0.133" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_047_findExceptionWaybillByPage" time="0.106" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_008_getOrderTaskInfoById" time="0.205" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_026_saveOrderWaybill" time="0.139" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_042_findInTimelyRateByPage" time="0.107" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_011_04_separateTask" time="0.198" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_028_dispatchCar" time="0.138" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_027_findByPage" time="0.110" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_045_findInvoiceCost" time="0.102" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_032_saveQuiryLinePrice" time="0.141" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_006_02_findByPage" time="0.109" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_023_goSeparateSubTask" time="0.142" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_046_findLineOffByPage" time="0.128" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_007_findByPage" time="0.254" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_035_findByPage" time="0.136" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_054_findByPage" time="0.110" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_004_splitOrder" time="0.248" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_052_getOrderInfoById" time="0.155" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_024_createWaybillInfo" time="0.152" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_022_confirmTaskInfo" time="0.131" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_015_confirmTaskInfo" time="0.153" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_033_findByPage" time="0.115" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_053_splitOrder" time="0.238" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_020_getOrderSubTaskInfoById" time="0.105" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_031_findWaybillMonitor" time="0.112" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_025_findByPage" time="0.108" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_057_getOrderInfoById" time="0.168" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_038_findWaybillInfoByPage" time="0.128" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_006_04_findByPage" time="0.108" classname="testcase.baoLiIterationTwo" />
+                <testcase name="test_043_findSupplierCost" time="0.106" classname="testcase.baoLiIterationTwo" />
+      
+</testsuite>
